@@ -1,0 +1,25 @@
+def draw_circle(x,y,color,radius):
+    t.goto(x,y)
+    t.down()
+    t.begin_fill()
+    t.fillcolor(color)
+    t.circle(radius)
+    t.end_fill()
+    t.up()
+    t.home()
+import turtle
+t=turtle.Turtle()
+
+t.up()
+draw_circle(0,0,"pink",50)
+draw_circle(0,100,"red",50)
+draw_circle(0,200,"orange",50)
+draw_circle(100,0,"blue",50)
+draw_circle(200,0,"green",50)
+draw_circle(300,0,"yellow",50)
+
+draw_circle(0,-100,"red",50)
+draw_circle(0,-200,"orange",50)
+draw_circle(-100,0,"blue",50)
+draw_circle(-200,0,"green",50)
+draw_circle(-300,0,"yellow",50)
